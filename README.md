@@ -84,12 +84,14 @@ terraform {
 
 ## Files Description
 
-A zip file containing 
-- The NSXT zip terraform provider version 3.2.6
+A zip file called tf-install-test.zip containing:
+- The NSXT terraform provider version 3.2.6
 - a main.tf file used to do a simple tf deployment (creating an IPSet)
 - terraform.tfvars you have to update with your NSX Manager Creds
 - variables.tf associated to the main.tf
 - A bat file is provided to create the directory and copy the necessary files to the directories
+
+Copy this zip file to your Win2012R2 Server and unzip it locally to a directory you have R/W with your user (example is using Administrator. Adapt for your case)
 
 ## Description of the bat file
 ``` bash
