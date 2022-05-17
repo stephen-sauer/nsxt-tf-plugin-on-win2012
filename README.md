@@ -63,3 +63,27 @@ copy terraform-provider-nsxt_v3.2.6.exe C:\Users\Administrator\AppData\Roaming\t
 - Create a terraform.rc file under C:\Users\Administrator\AppData\ directory
 
   *See the provided terraform.rc example. You will have to adapt it to your needs.*
+
+  In this example, ALL the providers requests will be redirect to the local directory indicated in the terraform.rc.
+
+**Now, in the directory you plan to use to provision an environment**, add this to your « main.tf » file
+``` bash
+terraform {
+  required_providers {
+    nsxt = {
+      source  = "terraform.local/local/nsxt"
+      version = "3.2.6"
+    }
+  }
+}
+```
+
+**When doing ***terraform init***, you will see it’s using the local provider and not a remote location**
+
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
