@@ -1,0 +1,9 @@
+provider_installation {
+  filesystem_mirror {
+    path    = "C:\Users\Administrator\AppData\Roaming\terraform.d"
+    include = ["registry.terraform.io/hashicorp/*"]
+  }
+  direct {
+    exclude = ["example.com/*/*"]
+  }
+}
