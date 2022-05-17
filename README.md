@@ -80,7 +80,7 @@ terraform {
 
 **When doing ***terraform init***, you will see it’s using the local provider and not a remote location**
 
-
+![TF INIT](/tf-init.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
